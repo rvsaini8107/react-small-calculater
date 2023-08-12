@@ -63,6 +63,7 @@ const App = () => {
     if (num2 == 0) {
       setError("Num2 Cannot Be Zero");
       setSuccess("");
+      setResult("");
       return;
     }
     if (num1 == "") {
