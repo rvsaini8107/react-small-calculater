@@ -62,6 +62,7 @@ const App = () => {
   function div() {
     if (num2 == 0) {
       setError("Num2 Cannot Be Zero");
+      setSuccess("");
       return;
     }
     if (num1 == "") {
