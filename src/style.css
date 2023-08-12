@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.container {
+  box-shadow: -18px 22px 45px rgba(232, 28, 66, 0.89),
+    18px -22px 45px rgba(53, 28, 232, 0.74);
+  padding: 3%;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.card input {
+  outline: none;
+  padding: 6px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  border-radius: 0;
+  font-size: large;
+}
+.btn-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background-color: #2b2b2b;
+  color: white;
+  border: none;
+  padding: 5% 8%;
+  font-size: large;
+}
+.success-text {
+  color: blue;
+  text-align: center;
+}
+.error-text {
+  color: red;
+  text-align: center;
+}
+.result {
+  text-align: center;
+}
+
+.box-input {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-bottom: 21px;
+}
