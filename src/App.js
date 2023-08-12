@@ -45,6 +45,7 @@ const App = () => {
     console.log("sub", num1, num2);
   }
   function mul() {
+    
     if (num1 == "") {
       setError("Num1 Cannot Be Empty");
       setSuccess("");
@@ -54,9 +55,19 @@ const App = () => {
     }else{
       setError("");
       setSuccess("Success");
-      setResult(Number(num1) * Number(num2));
+       if(num2 == 0){
+        setResult(Number(num1))
+       }else if(num1 == 0){
+        setResult(Number(num1))
+       }
+       else{
+        console.log(Number(num1) * Number(num2))
+        setResult(Number(num1) * Number(num2));
+      }
+      
     }
-    setResult(Number(num1) * Number(num2));
+    
+    
     console.log("mul", num1, num2);
   }
   function div() {
@@ -129,7 +140,7 @@ const App = () => {
           <p className="success-text">{success&& "Success !"}</p>
           
         </div>
-        <div className="result">{result && "Result :"} {result && result}</div>
+        <div className="result">{result !== "" && "Result :"} {result && result}</div>
       </div>
     </div>
   );
